@@ -60,6 +60,14 @@ public class TransitDetails implements Serializable {
    */
   public int numStops;
 
+  /**
+   * contains the text that appears in schedules and sign boards to identify a transit trip to passengers.
+   * The text should uniquely identify a trip within a service day.
+   * For example, "538" is the {@code tripShortName} of the Amtrak train that leaves San Jose, CA at 15:10
+   * on weekdays to Sacramento, CA
+   */
+  public String tripShortName;
+
   /** Information about the transit line used in this step. */
   public TransitLine line;
 
@@ -71,6 +79,9 @@ public class TransitDetails implements Serializable {
     sb.append(arrivalStop).append(" at ").append(arrivalTime);
     if (headsign != null) {
       sb.append(" (").append(headsign).append(" )");
+    }
+    if (tripShortName != null) {
+      sb.append(" (").append(tripShortName).append(" )");
     }
     if (line != null) {
       sb.append(" on ").append(line);
