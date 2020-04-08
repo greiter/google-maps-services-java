@@ -189,6 +189,6 @@ nexusStaging {
     packageGroup = "com.google.maps"
 }
 
-signing {
-    sign publishing.publications.MapsJavaUtils
-}
+//signing {
+//    sign publishing.publications.MapsJavaUtils
+//}
