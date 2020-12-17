@@ -121,6 +121,7 @@ public class PlaceDetailsRequest
     ADR_ADDRESS("adr_address"),
     @Deprecated
     ALT_ID("alt_id"),
+    BUSINESS_STATUS("business_status"),
     FORMATTED_ADDRESS("formatted_address"),
     FORMATTED_PHONE_NUMBER("formatted_phone_number"),
     GEOMETRY("geometry"),
@@ -140,6 +141,7 @@ public class PlaceDetailsRequest
     INTERNATIONAL_PHONE_NUMBER("international_phone_number"),
     NAME("name"),
     OPENING_HOURS("opening_hours"),
+    @Deprecated
     PERMANENTLY_CLOSED("permanently_closed"),
     USER_RATINGS_TOTAL("user_ratings_total"),
     PHOTOS("photos"),
